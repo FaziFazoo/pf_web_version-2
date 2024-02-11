@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono&display=swap');
+*,*::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin:0;
+    font-family: 'Ubuntu', sans-serif;
+}
+.parallax {
+    /* The image used */
+    background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1842%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%26quot%3b%23SvgjsLinearGradient1843%26quot%3b)'%3e%3c/rect%3e%3cpath d='M318.777651639643 36.17911908263689L234.76821580336542 78.9840646388896 277.57316135961815 162.9935004751672 361.58259719589574 120.18855491891448z' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M900.247%2c403.549C939.333%2c402.233%2c967.343%2c371.856%2c988.748%2c339.126C1013.3%2c301.585%2c1041.563%2c258.136%2c1021.627%2c217.952C1000.321%2c175.006%2c948.147%2c158.752%2c900.247%2c160.738C855.826%2c162.579%2c816.207%2c188.195%2c795.129%2c227.34C775.099%2c264.537%2c779.138%2c309.174%2c800.782%2c345.456C821.865%2c380.797%2c859.118%2c404.934%2c900.247%2c403.549' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M610.154%2c106.454C637.218%2c105.992%2c665.264%2c99.392%2c679.758%2c76.532C695.191%2c52.191%2c694.519%2c20.916%2c680.274%2c-4.138C665.863%2c-29.484%2c639.31%2c-45.954%2c610.154%2c-45.888C581.108%2c-45.822%2c555.366%2c-28.823%2c540.581%2c-3.822C525.503%2c21.675%2c520.504%2c53.926%2c536.31%2c78.979C551.33%2c102.786%2c582.009%2c106.934%2c610.154%2c106.454' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M340.83775966218184 419.1921140751258L332.94882654333924 532.0091137292155 445.76582619742896 539.8980468480581 453.65475931627157 427.0810471939684z' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1302.846986904437 77.79841440756792L1394.7049566411893 142.11805726188112 1367.1666297587503-14.059555329184207z' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1281.5735338825978 233.1048482811359L1283.4975049098573 122.8806219507414 1173.2732785794628 120.95665092348185 1171.3493075522033 231.18087725387636z' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M141.12 285.45 a96.9 96.9 0 1 0 193.8 0 a96.9 96.9 0 1 0 -193.8 0z' fill='rgba(24%2c 15%2c 15%2c 0.2)' class='triangle-float3'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1842'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='84.72%25' y1='139.29%25' x2='15.28%25' y2='-39.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1843'%3e%3cstop stop-color='rgba(43%2c 65%2c 98%2c 1)' offset='0.02'%3e%3c/stop%3e%3cstop stop-color='rgba(0%2c 69%2c 158%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");;
+  
+    /* Set a specific height */
+    min-height: 500px;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: blur(1px);
+  }
+
+
+
+.home{
+    padding-top:100px;
+}
+.home-container{
+    margin-top: 150px;
+    height: 100%;
+    color:aliceblue;
+    margin: 100px 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.glass-effect{
+    background: rgb(66 104 179 / 28%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.4px);
+    -webkit-backdrop-filter: blur(11.4px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+}
+.text{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+}
+
+.name{
+    font-family: 'Fira Mono', monospace;
+}
+
+#nam_e::after{
+    content:'|';
+    margin-left: 5px;
+    animation: blink 0.9s infinite;
+}
+
+@keyframes  blink{
+    0%{
+        opacity: 1;
+    } 
+    100%{
+        opacity: 0;;
+    }   
+}
+
+.quali :nth-child(2){
+    font-size: larger;
+    font-weight: 800;
+    
+}
+
+/* ABOUT */
+.about{
+    
+    margin-top: 260px;
+    margin-bottom: 260px;
+}
+.aboutme{
+    background: rgb(66 104 179 / 28%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(11.4px);
+    -webkit-backdrop-filter: blur(11.4px);
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    
+}
+
+.subject{
+    color: aliceblue;
+    font-size: larger;
+    padding: 109px;
+}
+
+
+.image{
+    margin-top: -3px;
+    border-radius: 24px;
+    margin-left: 90px;
+    width: 251px;
+    height:253px;
+}
+
+/* Skills */
+
+
+
+.cont{
+    margin-top: 160px;
+    margin-bottom: 260px;
+}
+
+.cont {
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-2);
+  }
+  
+  .tableWrapper {
+    padding-top:80px;
+    height:100%;
+  }
+  .skillGraphItem {
+    color: #F8F6F4;
+    font-size: 16px;
+    line-height: 30px;
+    padding-right: 5px;
+    text-align:right;
+  }
+  div.yellowBarFull { 
+      width: 0px;
+      height: 15px;
+      border-radius: 10px;
+      background: #efc94c;
+      position: relative;
+      animation: barFull 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.blueBarFull { 
+      width: 0px;
+      height: 15px;
+      border-radius: 10px;
+      background: #467e98;
+      position: relative;
+      animation: barFull 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.yellowBarHigh { 
+      width: 0px;
+      height: 15px;
+      border-radius: 10px;
+      background: #efc94c;
+      position: relative;
+      animation: barHigh 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.blueBarHigh { 
+      width: 0px;
+      height: 15px;
+      background: #467e98;
+      border-radius: 10px;
+      position: relative;
+      animation: barHigh 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.yellowBarHalf { 
+      width: 0px;
+      height: 15px;
+      background: #efc94c;
+      border-radius: 10px;
+      position: relative;
+      animation: barHalf 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.blueBarHalf { 
+      width: 0px;
+      height: 15px;
+      background: #467e98;
+      border-radius: 10px;
+      position: relative;
+      animation: barHalf 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.yellowBarLow { 
+      width: 0px;
+      height: 15px;
+      background: #efc94c;
+      border-radius: 10px;
+      position: relative;
+      animation: barLow 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  div.blueBarLow { 
+      width: 0px;
+      height: 15px;
+      background: #467e98;
+      border-radius: 10px;
+      position: relative;
+      animation: barLow 3s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+  }
+  
+
+
+
+.contact-block ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.contact-block li {
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.contact-block li .icon {
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    margin-right: 5px;
+}
+
+.contact-block a {
+    color: #fcff55;
+    text-decoration: none;
+}
+
+.contact-block a:hover {
+    text-decoration: underline;
+}
+
+  @keyframes barFull {
+      from {width:0px;}
+      to {width:400px;}
+  }
+  @keyframes barHigh {
+      from {width:0px;}
+      to {width:350px;}
+  }
+  @keyframes barHalf {
+      from {width:0px;}
+      to {width:250px;}
+  }
+  @keyframes barLow {
+      from {width:0px;}
+      to {width:150px;}
+  }
